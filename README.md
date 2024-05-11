@@ -57,10 +57,14 @@
 
 ![subnets.png](img%2Fsubnets.png)
 
+### Каталог с терраформом [tf1](tf1)
+
 4. Убедитесь, что теперь вы можете выполнить команды `terraform destroy` и `terraform apply` без дополнительных ручных действий.
 
 
+![apply.png](img%2Fapply.png)
 
+![destroy.png](img%2Fdestroy.png)
 
 5. В случае использования [Terraform Cloud](https://app.terraform.io/) в качестве [backend](https://www.terraform.io/docs/language/settings/backends/index.html) убедитесь, что применение изменений успешно проходит, используя web-интерфейс Terraform cloud.
 
@@ -81,6 +85,8 @@
    б. Подготовить [ansible](https://www.ansible.com/) конфигурации, можно воспользоваться, например [Kubespray](https://kubernetes.io/docs/setup/production-environment/tools/kubespray/)
 
 `В папке ansible скачиваем архив kuberspray, разворачиваем; `
+
+[ansible](tf2%2Fansible)
 
 ![kuberspray.png](img%2Fkuberspray.png)
 
@@ -201,7 +207,7 @@ https://github.com/seriywalk/deep-app
 
 `Основой интеграции GitLab с Kubernetes является GitLab Kubernetes Agent` 
 
-![gitlab_agent.png](img%2Fgitlab_agent.png)
+![gitlab_agent1.png](img%2Fgitlab_agent1.png)
 
 2. При любом коммите в репозиторие с тестовым приложением происходит сборка и отправка в регистр Docker образа.
 
