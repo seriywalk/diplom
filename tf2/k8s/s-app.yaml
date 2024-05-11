@@ -1,0 +1,15 @@
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: app-service
+spec:
+  selector:
+    app: diplom-app
+  ports:
+    - name: nginx-http
+      protocol: TCP
+      port: 80
+      nodePort: 30102
+      targetPort: 80
+  type: NodePort
